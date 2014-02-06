@@ -48,8 +48,8 @@ CREATE TABLE `sip_buddies` (
   `permit` varchar(95) DEFAULT NULL,
   `mask` varchar(95) DEFAULT NULL,
   `musiconhold` varchar(100) DEFAULT NULL,
-  `pickupgroup` varchar(10) DEFAULT NULL,
-  `qualify` char(3) DEFAULT 'yes',
+  `pickupgroup` varchar(10) DEFAULT '1',
+  `qualify` char(3) DEFAULT 'no',
   `regexten` varchar(80) DEFAULT NULL,
   `restrictcid` char(3) DEFAULT NULL,
   `rtptimeout` char(3) DEFAULT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE `sip_buddies` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `name_2` (`name`)
-) ENGINE=MyISAM AUTO_INCREMENT=128 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM AUTO_INCREMENT=138 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -83,4 +83,4 @@ CREATE TABLE `sip_buddies` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-12-24 13:56:26
+-- Dump completed on 2014-02-06 13:58:49
